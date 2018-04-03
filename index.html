@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="ie=edge" http-equiv="x-ua-compatible">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+        <link href="jasmine/lib/jasmine-3.1.0/jasmine_favicon.png" rel="shortcut icon">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/icomoon.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="jasmine/lib/jasmine-3.1.0/jasmine.css" rel="stylesheet">
+        <script src="jasmine/lib/jasmine-3.1.0/jasmine.js"></script>
+        <script src="jasmine/lib/jasmine-3.1.0/jasmine-html.js"></script>
+        <script src="jasmine/lib/jasmine-3.1.0/boot.js"></script>
+        <title>Feed Reader Testing</title>
+    </head>
+    <body class="menu-hidden">
+        <div class="header">
+            <a href="#" class="menu-icon-link">
+                <i class="icon-list"></i>
+            </a>
+
+            <h1 class="header-title">Feeds</h1>
+        </div>
+
+        <div class="slide-menu">
+            <ul class="feed-list"></ul>
+        </div>
+
+        <div class="feed"></div>
+
+        <script class="tpl-entry" type="text/x-handlebars-template">
+            <a class="entry-link" href="{{link}}">
+                <article class="entry">
+                    <h2>{{title}}</h2>
+                    <p>{{contentSnippet}}</p>
+                </article>
+            </a>
+        </script>
+
+        <script class="tpl-feed-list-item" type="text/x-handlebars-template">
+            <li>
+                <a href="#" data-id="{{id}}">{{name}}</a>
+            </li>
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+        <script src="https://google.com/jsapi"></script>
+        <script src="js/app.js"></script>
+        <script src="jasmine/spec/feedreader.js"></script>
+    </body>
+</html>
